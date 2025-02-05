@@ -1,11 +1,34 @@
 import comfy.samplers
+import json
+import os
 
 class ComfygSwitch:
     @classmethod
+    def load_configs(cls):
+        """
+        Load configuration options from a JSON file.
+        The file is assumed to be named 'configs.json' and located in the same directory.
+        Caches the result in the class attribute _configs.
+        """
+        if not hasattr(cls, '_configs'):
+            config_path = os.path.join(os.path.dirname(__file__), "model_configs.json")
+            try:
+                with open(config_path, "r") as f:
+                    cls._configs = json.load(f)
+            except Exception as e:
+                # If loading fails, fall back to an empty dict.
+                cls._configs = {}
+        return cls._configs
+
+    @classmethod
     def INPUT_TYPES(cls):
+        # Load the configs so that the dropdown options reflect available keys
+        configs = cls.load_configs()
+        # If there are no keys, provide a default option
+        model_options = list(configs.keys()) if configs else ["SDXL", "Illustrious"]
         return {
             "required": {
-                "model_choice": (["SDXL", "Illustrious"],),
+                "model_choice": (model_options, ),
                 "use_custom_input": ("BOOLEAN", {"default": False}),
                 "steps": ("INT", {"default": 30, "min": 1, "max": 200}),
                 "cfg": ("FLOAT", {"default": 7.0, "min": 0.1, "max": 20.0, "step": 0.1}),
@@ -24,20 +47,17 @@ class ComfygSwitch:
     FUNCTION = "select_config"
     CATEGORY = "Configuration"
 
-    CONFIGS = {
-        "SDXL": {"steps": 30, "cfg": 7.0, "sampler": "dpmpp_2m", "scheduler": "karras"},
-        "Illustrious": {"steps": 30, "cfg": 5.0, "sampler": "euler_ancestral", "scheduler": "Exponential"},
-    }
-
     def select_config(self, model_choice, use_custom_input, steps, cfg, sampler, scheduler):
-        config = self.CONFIGS.get(model_choice, {})
-
+        """
+        If use_custom_input is True, output the manually entered values.
+        Otherwise, load the configuration corresponding to the selected model_choice.
+        """
+        configs = self.load_configs()
+        config = configs.get(model_choice, {})
         if use_custom_input:
-            # Use custom input values
             return (steps, cfg, sampler, scheduler)
         else:
-            # Use configuration from model_choice
-            return (
+            return ( 
                 config.get("steps", 30),
                 config.get("cfg", 7.0),
                 config.get("sampler", comfy.samplers.KSampler.SAMPLERS[0]),
@@ -45,7 +65,12 @@ class ComfygSwitch:
             )
 
     def update_widgets(self, model_choice):
-        config = self.CONFIGS.get(model_choice, {})
+        """
+        Callback triggered when the dropdown value changes.
+        Returns new default values for steps, cfg, sampler, and scheduler based on the selected config.
+        """
+        configs = self.load_configs()
+        config = configs.get(model_choice, {})
         return {
             "steps": config.get("steps", 30),
             "cfg": config.get("cfg", 7.0),

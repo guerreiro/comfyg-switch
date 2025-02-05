@@ -1,4 +1,208 @@
 {
-  "SDXL": {"steps": 30, "cfg": 7.0, "sampler": "dpmpp_2m", "scheduler": "karras"},
-  "Illustrious": {"steps": 30, "cfg": 5.0, "sampler": "euler_ancestral", "scheduler": "normal"}
+  "SDXL": {
+    "steps": 30,
+    "cfg": 7.0,
+    "sampler": "dpmpp_2m",
+    "scheduler": "karras"
+  },
+  "Illustrious": {
+    "steps": 30,
+    "cfg": 5.0,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal"
+  },
+  "rouwei_061Vpred": {
+    "steps": 25,
+    "refine": 25,
+    "cfg": 7.0,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "link": "https://civitai.com/models/950531/rouwei"
+  },
+  "mistoonAnime_v10Illustrious": {
+    "steps": 25,
+    "refinmistoonAnime_v10Illustriouse": 25,
+    "cfg": 3.0,
+    "sampler": "euler_ancestral",
+    "scheduler": "sgm_uniform",
+    "link": "https://civitai.com/models/24149/mistoonanime?modelVersionId=1151831"
+  },
+  "jruTheJourneyRemains_v25XL": {
+    "steps": 30,
+    "refine": 30,
+    "cfg": 5.5,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "link": "https://civitai.com/models/303060/jruthe-journey-remains-unfinished25?modelVersionId=933413"
+  },
+  "modelEX_v60": {
+    "steps": 30,
+    "refine": 30,
+    "cfg": 5.0,
+    "sampler": "euler",
+    "scheduler": "exponential",
+    "link": "https://civitai.com/models/60638?modelVersionId=1262911",
+    "description": "Steps: 30 Or More / CFG: 2-8 / Low = Soft & Soft Contrast / High = Sharp & High Contrast / Sampler: Euler / Scheduler: Exponential"
+  },
+  "illustriousXL_smoothftSOLID": {
+    "steps": 30,
+    "refine": 30,
+    "cfg": 7.0,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "link": "https://civitai.com/models/811067/illustrious-xl-smoothft?modelVersionId=1015877"
+  },
+  "illustriousPencilXL_v200": {
+    "steps": 30,
+    "refine": 30,
+    "cfg": 4.0,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "link": "https://civitai.com/models/838773/illustriouspencil-xl?modelVersionId=1025999"
+  },
+  "lizmix_version16": {
+    "steps": 25,
+    "refine": 25,
+    "cfg": 5.0,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "link": "https://civitai.com/models/302872/lizmix?modelVersionId=1163336",
+    "description": "Sampler: Euler a / DPM++ 2M / Steps: 20- / Clipskip: 2 / CFG Scale: 3-8"
+  },
+  "vauxzAnimeMergeIllu_illuVAhri": {
+    "steps": 30,
+    "refine": 30,
+    "cfg": 5.5,
+    "sampler": "euler_ancestral",
+    "scheduler": "karras",
+    "link": "https://civitai.com/models/911243/vauxz-anime-merge-illuponyxl?modelVersionId=1154420"
+  },
+  "initiumFinetuneNoobai_v20": {
+    "steps": 25,
+    "refine": 25,
+    "cfg": 6.0,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "link": "https://civitai.com/models/1004512/initium-or-finetune-or-noobai-epsilon-11?modelVersionId=1199303"
+  },
+  "alloyed_ilF10N4P4DV1": {
+    "steps": 30,
+    "refine": 30,
+    "cfg": 4.0,
+    "sampler": "dpmpp_2m_sde",
+    "scheduler": "karras",
+    "link": "https://civitai.com/models/1120284/alloyed?modelVersionId=1259101"
+  },
+  "hikariNoobVPred_101": {
+    "steps": 20,
+    "refine": 20,
+    "cfg": 4.0,
+    "sampler": "dpmpp_2m",
+    "scheduler": "simple",
+    "link": "https://civitai.com/models/938672/hikari-noob-v-pred"
+  },
+  "kokioIllu_v10": {
+    "steps": 30,
+    "refine": 30,
+    "cfg": 5.0,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "link": "https://civitai.com/models/1135145/kokio-illu?modelVersionId=1276274"
+  },
+  "noobevo_v1": {
+    "steps": 25,
+    "refine": 25,
+    "cfg": 7.0,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "link": "https://civitai.com/models/916715/noobevo"
+  },
+  "novaAnimeXL_ilV30HappyNewYear": {
+    "steps": 30,
+    "refine": 30,
+    "cfg": 7.0,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "link": "https://civitai.com/models/376130/nova-anime-xl?modelVersionId=1186101"
+  },
+  "hsArtAnime_illust20": {
+    "steps": 25,
+    "refine": 25,
+    "cfg": 6.0,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "link": "https://civitai.com/models/1090064/hs-art-anime"
+  },
+  "pasanctuarySDXL_v40": {
+    "steps": 30,
+    "refine": 30,
+    "cfg": 6.0,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "link": "https://civitai.com/models/835578/pasanctuary-sdxl-illustriousxl?modelVersionId=1123094"
+  },
+  "silvermoonmix_v10": {
+    "steps": 28,
+    "refine": 28,
+    "cfg": 5.5,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "link": "https://civitai.com/models/1063772/silvermoonmix-illustrious-evolved"
+  },
+  "sweetMix_illustriousXLV12": {
+    "steps": 30,
+    "refine": 30,
+    "cfg": 5.0,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "link": "https://civitai.com/models/18927/sweet-mix?modelVersionId=1178193"
+  },
+  "waiNSFWIllustrious_v80": {
+    "steps": 30,
+    "refine": 30,
+    "cfg": 7.0,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "link": "https://civitai.com/models/827184/wai-nsfw-illustrious-sdxl"
+  },
+  "vxpILXL_v12": {
+    "steps": 15,
+    "refine": 15,
+    "cfg": 5.0,
+    "sampler": "dpmpp_sde",
+    "scheduler": "karras",
+    "link": "https://civitai.com/models/1070739/vxpilxl?modelVersionId=1201891"
+  },
+  "nanomixMultiverse_v11": {
+    "steps": 30,
+    "refine": 30,
+    "cfg": 5.0,
+    "sampler": "dpmpp_sde",
+    "scheduler": "karras",
+    "link": "https://civitai.com/models/932505/nanomix-multiverse-remix?modelVersionId=1294914"
+  },
+  "asyncsMIXILLUSTRIOUS_ilV20": {
+    "steps": 25,
+    "refine": 25,
+    "cfg": 6.0,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "link": "https://civitai.com/models/18205/asyncs-mix-illustrious"
+  },
+  "holyMixIllustriousxl_v1": {
+    "steps": 25,
+    "refine": 25,
+    "cfg": 5.0,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "link": "https://civitai.com/models/959490/holy-mix-illustriousxl-high-contrast-anime-checkpoint?modelVersionId=1074235"
+  },
+  "4nimaPencilXL_v101": {
+    "steps": 30,
+    "refine": 30,
+    "cfg": 6.0,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "link": "https://civitai.com/models/1205141/4nimapencil-xl"
+  }
 }
