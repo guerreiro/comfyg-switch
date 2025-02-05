@@ -1,0 +1,4 @@
+{
+  "SDXL": {"steps": 30, "cfg": 7.0, "sampler": "dpmpp_2m", "scheduler": "karras"},
+  "Illustrious": {"steps": 30, "cfg": 5.0, "sampler": "euler_ancestral", "scheduler": "normal"}
+}
