@@ -53,6 +53,7 @@ class ComfygSwitch:
         Otherwise, load the configuration corresponding to the selected model_choice.
         """
         configs = self.load_configs()
+        model_choice = self.get_last_path_segment(model_choice)
         config = configs.get(model_choice, {})
         if use_custom_input:
             return (steps, cfg, sampler, scheduler)
@@ -77,6 +78,14 @@ class ComfygSwitch:
             "sampler": config.get("sampler", comfy.samplers.KSampler.SAMPLERS[0]),
             "scheduler": config.get("scheduler", comfy.samplers.KSampler.SCHEDULERS[0])
         }
+
+    @classmethod
+    def get_last_path_segment(self, path: str) -> str:
+        if not isinstance(path, str) or not path.strip():
+            return ""
+        last_segment = os.path.basename(path.strip().replace("\\", "/"))
+        title, _ = os.path.splitext(last_segment)  # Remove the extension
+        return title
 
 NODE_CLASS_MAPPINGS = {
     "ComfygSwitch": ComfygSwitch
