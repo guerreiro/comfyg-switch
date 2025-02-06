@@ -1,4 +1,5 @@
 import comfy.samplers
+import folder_paths
 import json
 import os
 
@@ -22,13 +23,9 @@ class ComfygSwitch:
 
     @classmethod
     def INPUT_TYPES(cls):
-        # Load the configs so that the dropdown options reflect available keys
-        configs = cls.load_configs()
-        # If there are no keys, provide a default option
-        model_options = list(configs.keys()) if configs else ["SDXL", "Illustrious"]
         return {
             "required": {
-                "model_choice": (model_options, ),
+                "checkpoint_model": (folder_paths.get_filename_list("checkpoints"),),
                 "use_custom_input": ("BOOLEAN", {"default": False}),
                 "steps": ("INT", {"default": 30, "min": 1, "max": 200}),
                 "cfg": ("FLOAT", {"default": 7.0, "min": 0.1, "max": 20.0, "step": 0.1}),
@@ -47,22 +44,32 @@ class ComfygSwitch:
     FUNCTION = "select_config"
     CATEGORY = "Configuration"
 
-    def select_config(self, model_choice, use_custom_input, steps, cfg, sampler, scheduler):
+    def select_config(self, checkpoint_model, use_custom_input, steps, cfg, sampler, scheduler):
         """
         If use_custom_input is True, output the manually entered values.
         Otherwise, load the configuration corresponding to the selected model_choice.
         """
         configs = self.load_configs()
-        model_choice = self.get_last_path_segment(model_choice)
+        model_choice = self.get_last_path_segment(checkpoint_model)
         config = configs.get(model_choice, {})
+
+        # Define a default configuration.
+        default_config = {
+            "steps": 30,
+            "cfg": 7.0,
+            "sampler": "euler_ancestral",
+            "scheduler": "normal"
+        }
+        final_config = {**default_config, **config}
+
         if use_custom_input:
             return (steps, cfg, sampler, scheduler)
         else:
-            return ( 
-                config.get("steps", 30),
-                config.get("cfg", 7.0),
-                config.get("sampler", comfy.samplers.KSampler.SAMPLERS[0]),
-                config.get("scheduler", comfy.samplers.KSampler.SCHEDULERS[0])
+            return (
+                final_config["steps"],
+                final_config["cfg"],
+                final_config["sampler"],
+                final_config["scheduler"]
             )
 
     def update_widgets(self, model_choice):
