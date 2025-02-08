@@ -1,16 +1,4 @@
 {
-  "SDXL": {
-    "steps": 30,
-    "cfg": 7.0,
-    "sampler": "dpmpp_2m",
-    "scheduler": "karras"
-  },
-  "Illustrious": {
-    "steps": 30,
-    "cfg": 5.0,
-    "sampler": "euler_ancestral",
-    "scheduler": "normal"
-  },
   "rouwei_061Vpred": {
     "steps": 25,
     "refine": 25,
@@ -204,5 +192,117 @@
     "sampler": "euler_ancestral",
     "scheduler": "normal",
     "link": "https://civitai.com/models/1205141/4nimapencil-xl"
+  },
+  "artium_v20": {
+    "steps": 30,
+    "refine": 30,
+    "cfg": 7.0,
+    "sampler": "dpmpp_2m",
+    "scheduler": "karras",
+    "link": "https://civitai.com/models/216439/artium"
+  },
+  "albedobaseXL_v31Large": {
+    "steps": 30,
+    "refine": 30,
+    "cfg": 4.0,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "link": "https://civitai.com/models/140737/albedobase-xl"
+  },
+  "animagineXL40_v40": {
+    "steps": 25,
+    "refine": 25,
+    "cfg": 6.0,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "link": "https://civitai.com/models/1188071?modelVersionId=1337429"
+  },
+  "animaPencilXL_v500": {
+    "steps": 30,
+    "refine": 30,
+    "cfg": 5.0,
+    "sampler": "dpmpp_2m_sde",
+    "scheduler": "karras",
+    "link": "https://civitai.com/models/261336?modelVersionId=597138"
+  },
+  "AnythingXL_xl": {
+    "steps": 30,
+    "refine": 30,
+    "cfg": 8.0,
+    "sampler": "dpmpp_2m",
+    "scheduler": "karras",
+    "link": "https://civitai.com/models/9409?modelVersionId=384264"
+  },
+  "artiwaifuDiffusion_v20": {
+    "steps": 25,
+    "refine": 25,
+    "cfg": 7.5,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "link": "https://civitai.com/models/435207?modelVersionId=782125"
+  },
+  "bluePencilXL_v700": {
+    "steps": 30,
+    "refine": 30,
+    "cfg": 7.0,
+    "sampler": "dpmpp_2m_sde",
+    "scheduler": "karras",
+    "link": "https://civitai.com/models/119012?modelVersionId=592322"
+  },
+  "CHEYENNE_ch01ALTCleanLineart": {
+    "steps": 25,
+    "refine": 25,
+    "cfg": 3.0,
+    "sampler": "dpmpp_2m",
+    "scheduler": "karras",
+    "link": "https://civitai.com/models/198051?modelVersionId=1099629"
+  },
+  "CHEYENNE_v20": {
+    "steps": 25,
+    "refine": 25,
+    "cfg": 3.0,
+    "sampler": "dpmpp_2m",
+    "scheduler": "karras",
+    "link": "https://civitai.com/models/198051?modelVersionId=1055511"
+  },
+  "raenaXL_v10": {
+    "steps": 30,
+    "refine": 30,
+    "cfg": 7.0,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "link": "https://civitai.com/models/380069?modelVersionId=424326"
+  },
+  "realcartoonXL_v7": {
+    "steps": 30,
+    "refine": 30,
+    "cfg": 7.0,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "link": "https://civitai.com/models/125907?modelVersionId=686204"
+  },
+  "realismEngineSDXL_v30VAE": {
+    "steps": 25,
+    "refine": 25,
+    "cfg": 4.0,
+    "sampler": "dpmpp_2m_sde",
+    "scheduler": "karras",
+    "link": "https://civitai.com/models/152525/realism-engine-sdxl"
+  },
+  "realvisxlV50_v50Bakedvae": {
+    "steps": 30,
+    "refine": 30,
+    "cfg": 7.0,
+    "sampler": "dpmpp_2m_sde",
+    "scheduler": "karras",
+    "link": "https://civitai.com/models/139562?modelVersionId=789646"
+  },
+  "ponyDiffusionV6XL_v6StartWithThisOne": {
+    "steps": 30,
+    "refine": 30,
+    "cfg": 8.5,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "link": "https://civitai.com/models/257749/pony-diffusion-v6-xl"
   }
 }
