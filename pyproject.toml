@@ -1,0 +1,14 @@
+[project]
+name = "g-switch"
+description = "Comfyg Switch is a custom node that dynamically selects model configuration parameters based on the chosen checkpoint. It reads model-specific settings from a JSON file (model_configs.json)."
+version = "1.0.0"
+license = {file = "LICENSE"}
+
+[project.urls]
+Repository = "https://github.com/guerreiro/comfyg-switch"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = ""
+DisplayName = "comfyg-switch"
+Icon = ""
