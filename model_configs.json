@@ -1,7 +1,7 @@
 {
   "rouwei_061Vpred": {
     "steps": 25,
-    "refine": 25,
+    "refiner_steps": 25,
     "cfg": 7.0,
     "sampler": "euler_ancestral",
     "scheduler": "normal",
@@ -17,7 +17,7 @@
   },
   "jruTheJourneyRemains_v25XL": {
     "steps": 30,
-    "refine": 30,
+    "refiner_steps": 30,
     "cfg": 5.5,
     "sampler": "euler_ancestral",
     "scheduler": "normal",
@@ -25,7 +25,7 @@
   },
   "modelEX_v60": {
     "steps": 30,
-    "refine": 30,
+    "refiner_steps": 30,
     "cfg": 5.0,
     "sampler": "euler",
     "scheduler": "exponential",
@@ -34,7 +34,7 @@
   },
   "illustriousXL_smoothftSOLID": {
     "steps": 30,
-    "refine": 30,
+    "refiner_steps": 30,
     "cfg": 7.0,
     "sampler": "euler_ancestral",
     "scheduler": "normal",
@@ -42,7 +42,7 @@
   },
   "illustriousPencilXL_v200": {
     "steps": 30,
-    "refine": 30,
+    "refiner_steps": 30,
     "cfg": 4.0,
     "sampler": "euler_ancestral",
     "scheduler": "normal",
@@ -50,7 +50,7 @@
   },
   "lizmix_version16": {
     "steps": 25,
-    "refine": 25,
+    "refiner_steps": 25,
     "cfg": 5.0,
     "sampler": "euler_ancestral",
     "scheduler": "normal",
@@ -59,7 +59,7 @@
   },
   "vauxzAnimeMergeIllu_illuVAhri": {
     "steps": 30,
-    "refine": 30,
+    "refiner_steps": 30,
     "cfg": 5.5,
     "sampler": "euler_ancestral",
     "scheduler": "karras",
@@ -67,7 +67,7 @@
   },
   "initiumFinetuneNoobai_v20": {
     "steps": 25,
-    "refine": 25,
+    "refiner_steps": 25,
     "cfg": 6.0,
     "sampler": "euler_ancestral",
     "scheduler": "normal",
@@ -75,7 +75,7 @@
   },
   "alloyed_ilF10N4P4DV1": {
     "steps": 30,
-    "refine": 30,
+    "refiner_steps": 30,
     "cfg": 4.0,
     "sampler": "dpmpp_2m_sde",
     "scheduler": "karras",
@@ -83,7 +83,7 @@
   },
   "hikariNoobVPred_101": {
     "steps": 20,
-    "refine": 20,
+    "refiner_steps": 20,
     "cfg": 4.0,
     "sampler": "dpmpp_2m",
     "scheduler": "simple",
@@ -91,7 +91,7 @@
   },
   "kokioIllu_v10": {
     "steps": 30,
-    "refine": 30,
+    "refiner_steps": 30,
     "cfg": 5.0,
     "sampler": "euler_ancestral",
     "scheduler": "normal",
@@ -99,7 +99,7 @@
   },
   "noobevo_v1": {
     "steps": 25,
-    "refine": 25,
+    "refiner_steps": 25,
     "cfg": 7.0,
     "sampler": "euler_ancestral",
     "scheduler": "normal",
@@ -107,7 +107,7 @@
   },
   "novaAnimeXL_ilV30HappyNewYear": {
     "steps": 30,
-    "refine": 30,
+    "refiner_steps": 30,
     "cfg": 7.0,
     "sampler": "euler_ancestral",
     "scheduler": "normal",
@@ -115,7 +115,7 @@
   },
   "hsArtAnime_illust20": {
     "steps": 25,
-    "refine": 25,
+    "refiner_steps": 25,
     "cfg": 6.0,
     "sampler": "euler_ancestral",
     "scheduler": "normal",
@@ -123,7 +123,7 @@
   },
   "pasanctuarySDXL_v40": {
     "steps": 30,
-    "refine": 30,
+    "refiner_steps": 30,
     "cfg": 6.0,
     "sampler": "euler_ancestral",
     "scheduler": "normal",
@@ -131,7 +131,7 @@
   },
   "silvermoonmix_v10": {
     "steps": 28,
-    "refine": 28,
+    "refiner_steps": 28,
     "cfg": 5.5,
     "sampler": "euler_ancestral",
     "scheduler": "normal",
@@ -139,7 +139,7 @@
   },
   "sweetMix_illustriousXLV12": {
     "steps": 30,
-    "refine": 30,
+    "refiner_steps": 30,
     "cfg": 5.0,
     "sampler": "euler_ancestral",
     "scheduler": "normal",
@@ -147,7 +147,7 @@
   },
   "waiNSFWIllustrious_v80": {
     "steps": 30,
-    "refine": 30,
+    "refiner_steps": 30,
     "cfg": 7.0,
     "sampler": "euler_ancestral",
     "scheduler": "normal",
@@ -155,7 +155,7 @@
   },
   "vxpILXL_v12": {
     "steps": 15,
-    "refine": 15,
+    "refiner_steps": 15,
     "cfg": 5.0,
     "sampler": "dpmpp_sde",
     "scheduler": "karras",
@@ -163,7 +163,7 @@
   },
   "nanomixMultiverse_v11": {
     "steps": 30,
-    "refine": 30,
+    "refiner_steps": 30,
     "cfg": 5.0,
     "sampler": "dpmpp_sde",
     "scheduler": "karras",
@@ -171,7 +171,7 @@
   },
   "asyncsMIXILLUSTRIOUS_ilV20": {
     "steps": 25,
-    "refine": 25,
+    "refiner_steps": 25,
     "cfg": 6.0,
     "sampler": "euler_ancestral",
     "scheduler": "normal",
@@ -179,7 +179,7 @@
   },
   "holyMixIllustriousxl_v1": {
     "steps": 25,
-    "refine": 25,
+    "refiner_steps": 25,
     "cfg": 5.0,
     "sampler": "euler_ancestral",
     "scheduler": "normal",
@@ -187,7 +187,7 @@
   },
   "4nimaPencilXL_v101": {
     "steps": 30,
-    "refine": 30,
+    "refiner_steps": 30,
     "cfg": 6.0,
     "sampler": "euler_ancestral",
     "scheduler": "normal",
@@ -195,7 +195,7 @@
   },
   "artium_v20": {
     "steps": 30,
-    "refine": 30,
+    "refiner_steps": 30,
     "cfg": 7.0,
     "sampler": "dpmpp_2m",
     "scheduler": "karras",
@@ -203,7 +203,7 @@
   },
   "albedobaseXL_v31Large": {
     "steps": 30,
-    "refine": 30,
+    "refiner_steps": 30,
     "cfg": 4.0,
     "sampler": "euler_ancestral",
     "scheduler": "normal",
@@ -211,7 +211,7 @@
   },
   "animagineXL40_v40": {
     "steps": 25,
-    "refine": 25,
+    "refiner_steps": 25,
     "cfg": 6.0,
     "sampler": "euler_ancestral",
     "scheduler": "normal",
@@ -219,7 +219,7 @@
   },
   "animaPencilXL_v500": {
     "steps": 30,
-    "refine": 30,
+    "refiner_steps": 30,
     "cfg": 5.0,
     "sampler": "dpmpp_2m_sde",
     "scheduler": "karras",
@@ -227,7 +227,7 @@
   },
   "AnythingXL_xl": {
     "steps": 30,
-    "refine": 30,
+    "refiner_steps": 30,
     "cfg": 8.0,
     "sampler": "dpmpp_2m",
     "scheduler": "karras",
@@ -235,7 +235,7 @@
   },
   "artiwaifuDiffusion_v20": {
     "steps": 25,
-    "refine": 25,
+    "refiner_steps": 25,
     "cfg": 7.5,
     "sampler": "euler_ancestral",
     "scheduler": "normal",
@@ -243,7 +243,7 @@
   },
   "bluePencilXL_v700": {
     "steps": 30,
-    "refine": 30,
+    "refiner_steps": 30,
     "cfg": 7.0,
     "sampler": "dpmpp_2m_sde",
     "scheduler": "karras",
@@ -251,7 +251,7 @@
   },
   "CHEYENNE_ch01ALTCleanLineart": {
     "steps": 25,
-    "refine": 25,
+    "refiner_steps": 25,
     "cfg": 3.0,
     "sampler": "dpmpp_2m",
     "scheduler": "karras",
@@ -259,7 +259,7 @@
   },
   "CHEYENNE_v20": {
     "steps": 25,
-    "refine": 25,
+    "refiner_steps": 25,
     "cfg": 3.0,
     "sampler": "dpmpp_2m",
     "scheduler": "karras",
@@ -267,7 +267,7 @@
   },
   "raenaXL_v10": {
     "steps": 30,
-    "refine": 30,
+    "refiner_steps": 30,
     "cfg": 7.0,
     "sampler": "euler_ancestral",
     "scheduler": "normal",
@@ -275,7 +275,7 @@
   },
   "realcartoonXL_v7": {
     "steps": 30,
-    "refine": 30,
+    "refiner_steps": 30,
     "cfg": 7.0,
     "sampler": "euler_ancestral",
     "scheduler": "normal",
@@ -283,7 +283,7 @@
   },
   "realismEngineSDXL_v30VAE": {
     "steps": 25,
-    "refine": 25,
+    "refiner_steps": 25,
     "cfg": 4.0,
     "sampler": "dpmpp_2m_sde",
     "scheduler": "karras",
@@ -291,7 +291,7 @@
   },
   "realvisxlV50_v50Bakedvae": {
     "steps": 30,
-    "refine": 30,
+    "refiner_steps": 30,
     "cfg": 7.0,
     "sampler": "dpmpp_2m_sde",
     "scheduler": "karras",
@@ -299,10 +299,26 @@
   },
   "ponyDiffusionV6XL_v6StartWithThisOne": {
     "steps": 30,
-    "refine": 30,
+    "refiner_steps": 30,
     "cfg": 8.5,
     "sampler": "euler_ancestral",
     "scheduler": "normal",
     "link": "https://civitai.com/models/257749/pony-diffusion-v6-xl"
+  },
+  "juggernautXL_juggXIByRundiffusion": {
+    "steps": 30,
+    "refiner_steps": 30,
+    "cfg": 4.5,
+    "sampler": "dpmpp_2m_sde",
+    "scheduler": "normal",
+    "link": "https://civitai.com/models/133005?modelVersionId=782002"
+  },
+  "dreamshaperXL_alpha2Xl10": {
+    "steps": 30,
+    "refiner_steps": 30,
+    "cfg": 8,
+    "sampler": "dpmpp_2s_ancestral",
+    "scheduler": "normal",
+    "link": "https://civitai.com/models/112902/dreamshaper-xl?modelVersionId=126688"
   }
 }
