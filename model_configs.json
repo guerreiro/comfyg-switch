@@ -320,5 +320,29 @@
     "sampler": "dpmpp_2s_ancestral",
     "scheduler": "normal",
     "link": "https://civitai.com/models/112902/dreamshaper-xl?modelVersionId=126688"
+  },
+  "voivodspell_v10": {
+    "steps": 28,
+    "refiner_steps": 28,
+    "cfg": 7,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "link": "https://civitai.com/models/1257976/voivodspell?modelVersionId=1418408"
+  },
+  "anillustrious_v2VAE": {
+    "steps": 30,
+    "refiner_steps": 30,
+    "cfg": 7,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "link": "https://civitai.com/models/1121885?modelVersionId=1335585"
+  },
+  "matrixClassic_v20": {
+    "steps": 20,
+    "refiner_steps": 20,
+    "cfg": 4.5,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "link": "https://civitai.com/models/771057/matrix-classic?modelVersionId=1464617"
   }
 }
