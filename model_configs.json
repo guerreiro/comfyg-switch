@@ -344,5 +344,37 @@
     "sampler": "euler_ancestral",
     "scheduler": "normal",
     "link": "https://civitai.com/models/771057/matrix-classic?modelVersionId=1464617"
+  },
+  "animeMergeDims_v10": {
+    "steps": 25,
+    "refiner_steps": 25,
+    "cfg": 3.0,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "link": "https://civitai.com/models/1298771/anime-merge-dims-luminar?modelVersionId=1465901"
+  },
+  "flacsAnimeMixIL_v40": {
+    "steps": 20,
+    "refiner_steps": 20,
+    "cfg": 7.0,
+    "sampler": "euler_ancestral",
+    "scheduler": "simple",
+    "link": "https://civitai.com/models/1235303?modelVersionId=1474152"
+  },
+  "rouwei_v07Vpred": {
+    "steps": 28,
+    "refiner_steps": 28,
+    "cfg": 3,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "link": "https://civitai.com/models/950531?modelVersionId=1360303"
+  },
+  "noobmerge_v10A": {
+    "steps": 20,
+    "refiner_steps": 20,
+    "cfg": 5,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "link": "https://civitai.com/models/947880?modelVersionId=1418570"
   }
 }
