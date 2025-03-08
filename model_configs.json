@@ -416,5 +416,29 @@
     "sampler": "euler_ancestral",
     "scheduler": "simple",
     "link": "https://civitai.com/models/1235303?modelVersionId=1493480"
+  },
+  "fiamixXL_fiamixXLV5114": {
+    "steps": 40,
+    "refiner_steps": 40,
+    "cfg": 6.0,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "link": "https://civitai.com/models/373845?modelVersionId=1506875"
+  },
+  "dimslustrious10_v10": {
+    "steps": 25,
+    "refiner_steps": 25,
+    "cfg": 5.0,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "link": "https://civitai.com/models/1332074/dimslustrious-10"
+  },
+  "anillustrious_v3Vae": {
+    "steps": 25,
+    "refiner_steps": 25,
+    "cfg": 6.0,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "link": "https://civitai.com/models/1121885?modelVersionId=1436873"
   }
 }
