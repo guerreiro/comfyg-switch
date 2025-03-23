@@ -137,6 +137,14 @@
     "scheduler": "normal",
     "link": "https://civitai.com/models/1063772/silvermoonmix-illustrious-evolved"
   },
+  "silvermoonmix01_v30VPred": {
+    "steps": 28,
+    "refiner_steps": 28,
+    "cfg": 4.5,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "link": "https://civitai.com/models/813634?modelVersionId=1563555"
+  },
   "sweetMix_illustriousXLV12": {
     "steps": 30,
     "refiner_steps": 30,
@@ -385,6 +393,14 @@
     "scheduler": "karras",
     "link": "https://civitai.com/models/1273254/arthemy-comics-illustrious?modelVersionId=1478093"
   },
+  "arthemyComics_v30": {
+    "steps": 35,
+    "refiner_steps": 35,
+    "cfg": 5.0,
+    "sampler": "deis",
+    "scheduler": "normal",
+    "link": "https://civitai.com/models/1273254?modelVersionId=1531224"
+  },
   "sweetMix_illustriousXLV13": {
     "steps": 20,
     "refiner_steps": 20,
@@ -440,5 +456,85 @@
     "sampler": "euler_ancestral",
     "scheduler": "normal",
     "link": "https://civitai.com/models/1121885?modelVersionId=1436873"
+  },
+  "annosdxl_annoanimexl": {
+    "steps": 30,
+    "refiner_steps": 30,
+    "cfg": 7.0,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "link": "https://civitai.com/models/1279768/annosdxl?modelVersionId=1529724"
+  },
+  "raenaXL_v20": {
+    "steps": 28,
+    "refiner_steps": 28,
+    "cfg": 6.0,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "link": "https://civitai.com/models/380069/raena-xl?modelVersionId=1495369"
+  },
+  "purplexl_v13": {
+    "steps": 45,
+    "refiner_steps": 45,
+    "cfg": 7.0,
+    "sampler": "dpmpp_2m",
+    "scheduler": "karras",
+    "link": "https://civitai.com/models/1171319/purplexl?modelVersionId=1521344"
+  },
+  "hadrianDeliceSDXLILL_v14": {
+    "steps": 40,
+    "refiner_steps": 40,
+    "cfg": 7.0,
+    "sampler": "euler",
+    "scheduler": "normal",
+    "link": "https://civitai.com/models/1296870?modelVersionId=1559423"
+  },
+  "tanemomix_v2": {
+    "steps": 30,
+    "refiner_steps": 30,
+    "cfg": 4.0,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "link": "https://civitai.com/models/1297977/tanemomix?modelVersionId=1535992"
+  },
+  "illustriousXL10_v10": {
+    "steps": 28,
+    "refiner_steps": 28,
+    "cfg": 3.0,
+    "sampler": "dpmpp_2s_ancestral_cfg_pp",
+    "scheduler": "normal",
+    "link": "https://civitai.com/models/1232765/illustrious-xl-10?modelVersionId=1389133"
+  },
+  "butterflyEclipse_10": {
+    "steps": 20,
+    "refiner_steps": 20,
+    "cfg": 7.0,
+    "sampler": "dpmpp_2m",
+    "scheduler": "karras",
+    "link": "https://civitai.com/models/1297481/butterfly-eclipse-illustrious?modelVersionId=1464386"
+  },
+  "amanatsuIllustrious_v11": {
+    "steps": 20,
+    "refiner_steps": 20,
+    "cfg": 7.0,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "link": "https://civitai.com/models/1325426/amanatsu-illustrious?modelVersionId=1496755"
+  },
+  "fabricatedXL_v30": {
+    "steps": 34,
+    "refiner_steps": 34,
+    "cfg": 6.5,
+    "sampler": "dpmpp_2m_sde",
+    "scheduler": "karras",
+    "link": "https://civitai.com/models/1203050?modelVersionId=1531731"
+  },
+  "newgroundsMix_v20": {
+    "steps": 30,
+    "refiner_steps": 30,
+    "cfg": 7.0,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "link": "https://civitai.com/models/1239699?modelVersionId=1547253"
   }
 }
