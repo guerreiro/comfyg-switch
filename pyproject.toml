@@ -1,5 +1,5 @@
 [project]
-name = "g-switch"
+name = "comfyg-switch"
 description = "Comfyg Switch is a custom node that dynamically selects model configuration parameters based on the chosen checkpoint. It reads model-specific settings from a JSON file (model_configs.json)."
 version = "1.0.0"
 license = {file = "LICENSE"}
