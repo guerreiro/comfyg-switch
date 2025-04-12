@@ -648,5 +648,95 @@
     "scheduler": "normal",
     "modelVersionId": 1534828,
     "link": "https://civitai.com/models/994446?modelVersionId=1534828"
+  },
+  "raehoshiIllustXL_v40": {
+    "steps": 28,
+    "refiner_steps": 28,
+    "cfg": 6.0,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "modelVersionId": 1583114,
+    "link": "https://civitai.com/models/846917?modelVersionId=1583114"
+  },
+  "animij_v20": {
+    "steps": 20,
+    "refiner_steps": 20,
+    "cfg": 7.0,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "modelVersionId": 1613008,
+    "link": "https://civitai.com/models/1353314?modelVersionId=1613008"
+  },
+  "oeaiIllustriousXLMore_oeaiV11U": {
+    "steps": 26,
+    "refiner_steps": 26,
+    "cfg": 7.0,
+    "sampler": "euler_ancestral",
+    "scheduler": "ddim_uniform",
+    "modelVersionId": 1619007,
+    "link": "https://civitai.com/models/1400174?modelVersionId=1619007"
+  },
+  "artStudioComplete_v10": {
+    "steps": 30,
+    "refiner_steps": 30,
+    "cfg": 5.0,
+    "sampler": "dpmpp_3m_sde",
+    "scheduler": "karras",
+    "modelVersionId": 1618568,
+    "link": "https://civitai.com/models/1431896/art-studio-complete?modelVersionId=1618568"
+  },
+  "accusedspell_v10": {
+    "steps": 25,
+    "refiner_steps": 25,
+    "cfg": 5.5,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "modelVersionId": 1474399,
+    "link": "https://civitai.com/models/1306558/accusedspell?modelVersionId=1474399"
+  },
+  "sepulchrespell_v10": {
+    "steps": 25,
+    "refiner_steps": 25,
+    "cfg": 6.0,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "modelVersionId": 1625105,
+    "link": "https://civitai.com/models/1437642/sepulchrespell?modelVersionId=1625105"
+  },
+  "rfktrsSpeedpainting_v10": {
+    "steps": 12,
+    "refiner_steps": 12,
+    "cfg": 2.0,
+    "sampler": "euler",
+    "scheduler": "normal",
+    "modelVersionId": 1627363,
+    "link": "https://civitai.com/models/1439615/rfktrs-speedpainting-xl?modelVersionId=1627363"
+  },
+  "testamentspell_v10": {
+    "steps": 24,
+    "refiner_steps": 24,
+    "cfg": 6.0,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "modelVersionId": 1637534,
+    "link": "https://civitai.com/models/1448425?modelVersionId=1637534"
+  },
+  "oeaiIllustriousXLMore_oeaiV12UE": {
+    "steps": 26,
+    "refiner_steps": 26,
+    "cfg": 7.0,
+    "sampler": "euler_ancestral",
+    "scheduler": "ddim_uniform",
+    "modelVersionId": 1642980,
+    "link": "https://civitai.com/models/1400174?modelVersionId=1642980"
+  },
+  "wetInk_v10": {
+    "steps": 10,
+    "refiner_steps": 10,
+    "cfg": 1.0,
+    "sampler": "lcm",
+    "scheduler": "exponential",
+    "modelVersionId": 1652150,
+    "link": "https://civitai.com/models/1460975/wet-ink?modelVersionId=1652150"
   }
 }
