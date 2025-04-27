@@ -738,5 +738,59 @@
     "scheduler": "exponential",
     "modelVersionId": 1652150,
     "link": "https://civitai.com/models/1460975/wet-ink?modelVersionId=1652150"
+  },
+  "ntdmix_v15": {
+    "steps": 20,
+    "refiner_steps": 20,
+    "cfg": 5.0,
+    "sampler": "dpmpp_2m_sde",
+    "scheduler": "sgm_uniform",
+    "modelVersionId": 1590288,
+    "link": "https://civitai.com/models/1248959?modelVersionId=1590288"
+  },
+  "ZhongShi v2.0 Mythology": {
+    "steps": 24,
+    "refiner_steps": 24,
+    "cfg": 7.0,
+    "sampler": "dpmpp_2m",
+    "scheduler": "karras",
+    "modelVersionId": 1679445,
+    "link": "https://civitai.com/models/140795?modelVersionId=1679445"
+  },
+  "comicsFictionEngine_10": {
+    "steps": 20,
+    "refiner_steps": 20,
+    "cfg": 7.0,
+    "sampler": "dpmpp_2m",
+    "scheduler": "karras",
+    "modelVersionId": 1625365,
+    "link": "https://civitai.com/models/1437852?modelVersionId=1625365"
+  },
+  "anillustrious_v5Vae": {
+    "steps": 40,
+    "refiner_steps": 40,
+    "cfg": 7.0,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "modelVersionId": 1652528,
+    "link": "https://civitai.com/models/1121885?modelVersionId=1652528"
+  },
+  "oldMaster_v30": {
+    "steps": 24,
+    "refiner_steps": 24,
+    "cfg": 7.0,
+    "sampler": "dpmpp_2m",
+    "scheduler": "karras",
+    "modelVersionId": 1709343,
+    "link": "https://civitai.com/models/1462305/old-master?modelVersionId=1709343"
+  },
+  "illustrationXL_v10": {
+    "steps": 24,
+    "refiner_steps": 24,
+    "cfg": 7.0,
+    "sampler": "dpmpp_2m",
+    "scheduler": "karras",
+    "modelVersionId": 1708637,
+    "link": "https://civitai.com/models/1510489/illustration-xl?modelVersionId=1708637"
   }
 }
