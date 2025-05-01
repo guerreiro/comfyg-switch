@@ -792,5 +792,41 @@
     "scheduler": "karras",
     "modelVersionId": 1708637,
     "link": "https://civitai.com/models/1510489/illustration-xl?modelVersionId=1708637"
+  },
+  "nukeIlyumeTunedNSFW_v20": {
+    "steps": 25,
+    "refiner_steps": 25,
+    "cfg": 5.0,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "modelVersionId": 1692496,
+    "link": "https://civitai.com/models/1461133?modelVersionId=1692496"
+  },
+  "sweetMix_illustriousXLV14": {
+    "steps": 30,
+    "refiner_steps": 30,
+    "cfg": 6.0,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "modelVersionId": 1724867,
+    "link": "https://civitai.com/models/18927?modelVersionId=1724867"
+  },
+  "animeScreenshotMerge_v30": {
+    "steps": 25,
+    "refiner_steps": 25,
+    "cfg": 4.0,
+    "sampler": "euler",
+    "scheduler": "normal",
+    "modelVersionId": 1730218,
+    "link": "https://civitai.com/models/1298771?modelVersionId=1730218"
+  },
+  "ilradiated_v11": {
+    "steps": 20,
+    "refiner_steps": 20,
+    "cfg": 6.0,
+    "sampler": "euler_ancestral",
+    "scheduler": "karras",
+    "modelVersionId": 1731022,
+    "link": "https://civitai.com/models/1529948/ilradiated-illustrious"
   }
 }
