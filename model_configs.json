@@ -828,5 +828,50 @@
     "scheduler": "karras",
     "modelVersionId": 1731022,
     "link": "https://civitai.com/models/1529948/ilradiated-illustrious"
+  },
+  "flanimeIllustriousXL_v10": {
+    "steps": 24,
+    "refiner_steps": 24,
+    "cfg": 4.0,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "modelVersionId": 1747779,
+    "link": "https://civitai.com/models/1544647?modelVersionId=1747779"
+  },
+  "flanimeIllustriousXL_v15": {
+    "steps": 25,
+    "refiner_steps": 25,
+    "cfg": 4.0,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "modelVersionId": 1765815,
+    "link": "https://civitai.com/models/1544647?modelVersionId=1765815"
+  },
+  "didMixIllustriousxl_v10": {
+    "steps": 30,
+    "refiner_steps": 30,
+    "cfg": 7.0,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "modelVersionId": 1683943,
+    "link": "https://civitai.com/models/1488669/did-mix-illustriousxl-lunaxl-vae"
+  },
+  "fantasyAnime_v10": {
+    "steps": 20,
+    "refiner_steps": 20,
+    "cfg": 7.0,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "modelVersionId": 1765088,
+    "link": "https://civitai.com/models/1559815/fantasy-anime?modelVersionId=1765088"
+  },
+  "PurpleXLIllustration_v14": {
+    "steps": 45,
+    "refiner_steps": 45,
+    "cfg": 7.0,
+    "sampler": "dpmpp_2m",
+    "scheduler": "karras",
+    "modelVersionId": 1749956,
+    "link": "https://civitai.com/models/1171319?modelVersionId=1749956"
   }
 }
