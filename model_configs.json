@@ -873,5 +873,14 @@
     "scheduler": "karras",
     "modelVersionId": 1749956,
     "link": "https://civitai.com/models/1171319?modelVersionId=1749956"
+  },
+  "animeScreenshotMerge_v32": {
+    "steps": 25,
+    "refiner_steps": 25,
+    "cfg": 2.5,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "modelVersionId": 1767684,
+    "link": "https://civitai.com/models/1298771?modelVersionId=1767684"
   }
 }
