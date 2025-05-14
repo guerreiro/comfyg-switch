@@ -882,5 +882,41 @@
     "scheduler": "normal",
     "modelVersionId": 1767684,
     "link": "https://civitai.com/models/1298771?modelVersionId=1767684"
+  },
+  "tanemomix_v4": {
+    "steps": 28,
+    "refiner_steps": 28,
+    "cfg": 3,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "modelVersionId": 1754256,
+    "link": "https://civitai.com/models/1297977?modelVersionId=1754256"
+  },
+  "darkangelspell_v10": {
+    "steps": 24,
+    "refiner_steps": 24,
+    "cfg": 6,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "modelVersionId": 1772406,
+    "link": "https://civitai.com/models/1566241"
+  },
+  "exodusspell_v10": {
+    "steps": 26,
+    "refiner_steps": 26,
+    "cfg": 5.5,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "modelVersionId": 1657370,
+    "link": "https://civitai.com/models/1465438/exodusspell"
+  },
+  "drashgunspell_v10": {
+    "steps": 30,
+    "refiner_steps": 30,
+    "cfg": 7,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "modelVersionId": 1721643,
+    "link": "https://civitai.com/models/1521671/drashgunspell"
   }
 }
