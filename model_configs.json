@@ -918,5 +918,68 @@
     "scheduler": "normal",
     "modelVersionId": 1721643,
     "link": "https://civitai.com/models/1521671/drashgunspell"
-  }
+  },
+  "fantasyAnime_v11": {
+    "steps": 30,
+    "refiner_steps": 30,
+    "cfg": 7,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "modelVersionId": 1793377,
+    "link": "https://civitai.com/models/1559815?modelVersionId=1793377"
+  },
+  "silenceMix_v50": {
+    "steps": 30,
+    "refiner_steps": 30,
+    "cfg": 5,
+    "sampler": "ddpm",
+    "scheduler": "beta",
+    "modelVersionId": 1804174,
+    "link": "https://civitai.com/models/1106264?modelVersionId=1804174"
+  },
+  "edzepelionspell_v10": {
+    "steps": 30,
+    "refiner_steps": 30,
+    "cfg": 7,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "modelVersionId": 1822045,
+    "link": "https://civitai.com/models/1610056/edzepelionspell"
+  },
+  "oddlyIllustrious_v30": {
+    "steps": 30,
+    "refiner_steps": 30,
+    "cfg": 6,
+    "sampler": "euler_ancestral",
+    "scheduler": "sgm_uniform",
+    "modelVersionId": 1810401,
+    "link": "https://civitai.com/models/1545013?modelVersionId=1810401"
+  },
+  "animij_v30": {
+    "steps": 30,
+    "refiner_steps": 30,
+    "cfg": 7,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "modelVersionId": 1811796,
+    "link": "https://civitai.com/models/1353314?modelVersionId=1811796"
+  },
+  "vauwauspell_v10": {
+    "steps": 30,
+    "refiner_steps": 30,
+    "cfg": 7,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "modelVersionId": 1808143,
+    "link": "https://civitai.com/models/1597837"
+  },
+  "vauxzGrandMerge_v20": {
+    "steps": 30,
+    "refiner_steps": 30,
+    "cfg": 5.5,
+    "sampler": "euler_ancestral",
+    "scheduler": "karras",
+    "modelVersionId": 1798477,
+    "link": "https://civitai.com/models/1258621?modelVersionId=1798477"
+  },
 }
