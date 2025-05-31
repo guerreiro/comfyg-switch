@@ -982,4 +982,40 @@
     "modelVersionId": 1798477,
     "link": "https://civitai.com/models/1258621?modelVersionId=1798477"
   },
+  "camelia_v10EPS": {
+    "steps": 25,
+    "refiner_steps": 25,
+    "cfg": 5.5,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "modelVersionId": 1742367,
+    "link": "https://civitai.com/models/1539912?modelVersionId=1742367"
+  },
+  "cottonnoob_v4": {
+    "steps": 30,
+    "refiner_steps": 30,
+    "cfg": 5,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "modelVersionId": 1830361,
+    "link": "https://civitai.com/models/1259226?modelVersionId=1830361"
+  },
+  "oneStepIllustrious_v10VAE": {
+    "steps": 25,
+    "refiner_steps": 25,
+    "cfg": 7,
+    "sampler": "euler_ancestral",
+    "scheduler": "karras",
+    "modelVersionId": 1844034,
+    "link": "https://civitai.com/models/1629241/one-step-illustrious"
+  },
+  "beretMixManga_v10": {
+    "steps": 25,
+    "refiner_steps": 25,
+    "cfg": 7,
+    "sampler": "euler_ancestral",
+    "scheduler": "karras",
+    "modelVersionId": 1846081,
+    "link": "https://civitai.com/models/1631038/beret-mix-manga?modelVersionId=1846081"
+  },
 }
