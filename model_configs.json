@@ -1018,4 +1018,58 @@
     "modelVersionId": 1846081,
     "link": "https://civitai.com/models/1631038/beret-mix-manga?modelVersionId=1846081"
   },
+  "honeyAcid_v10": {
+    "steps": 30,
+    "refiner_steps": 30,
+    "cfg": 7,
+    "sampler": "euler",
+    "scheduler": "normal",
+    "modelVersionId": 1876957,
+    "link": "https://civitai.com/models/1658317/honey-and-acid"
+  },
+  "easyIllustriousXL_v30Flatpeak": {
+    "steps": 30,
+    "refiner_steps": 30,
+    "cfg": 5,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "modelVersionId": 1875439,
+    "link": "https://civitai.com/models/1550976/easy-illustrious-xl?modelVersionId=1875439"
+  },
+  "raehoshiIllustXL_v50": {
+    "steps": 28,
+    "refiner_steps": 28,
+    "cfg": 5,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "modelVersionId": 1838339,
+    "link": "https://civitai.com/models/846917?modelVersionId=1838339"
+  },
+  "hexbloomIonsyx_v155": {
+    "steps": 25,
+    "refiner_steps": 25,
+    "cfg": 5,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "modelVersionId": 1896662,
+    "link": "https://civitai.com/models/1612860?modelVersionId=1896662"
+  },
+  "animaxLatum_final": {
+    "steps": 5,
+    "refiner_steps": 5,
+    "cfg": 1.3,
+    "sampler": "lcm",
+    "scheduler": "karras",
+    "modelVersionId": 1888360,
+    "link": "https://civitai.com/models/1668345/animax-latum"
+  },
+  "catCitronAnimeTreasure_ilV7": {
+    "steps": 30,
+    "refiner_steps": 30,
+    "cfg": 7,
+    "sampler": "dpmpp_2m",
+    "scheduler": "karras",
+    "modelVersionId": 1881978,
+    "link": "https://civitai.com/models/131986/cat-citron-anime-treasure-illustrious-and-noobai?modelVersionId=1881978"
+  },
 }
