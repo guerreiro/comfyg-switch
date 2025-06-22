@@ -1071,5 +1071,23 @@
     "scheduler": "karras",
     "modelVersionId": 1881978,
     "link": "https://civitai.com/models/131986/cat-citron-anime-treasure-illustrious-and-noobai?modelVersionId=1881978"
+  },
+  "camelia_v20EpsContrast1": {
+    "steps": 25,
+    "refiner_steps": 25,
+    "cfg": 7,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "modelVersionId": 1911263,
+    "link": "https://civitai.com/models/1539912?modelVersionId=1911263"
+  },
+  "tanemomix_v5": {
+    "steps": 28,
+    "refiner_steps": 28,
+    "cfg": 3,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "modelVersionId": 1929473,
+    "link": "https://civitai.com/models/1297977?modelVersionId=1929473"
   }
 }
