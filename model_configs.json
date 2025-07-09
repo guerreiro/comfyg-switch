@@ -1125,5 +1125,41 @@
     "scheduler": "normal",
     "modelVersionId": 1911498,
     "link": "https://civitai.com/models/1612860?modelVersionId=1911498"
+  },
+  "ravenspell_v10": {
+    "steps": 28,
+    "refiner_steps": 28,
+    "cfg": 7,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "modelVersionId": 1958870,
+    "link": "https://civitai.com/models/1730822/ravenspell"
+  },
+  "animeScreenshotMerge_v40": {
+    "steps": 25,
+    "refiner_steps": 25,
+    "cfg": 3.5,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "modelVersionId": 1975760,
+    "link": "https://civitai.com/models/1332074?modelVersionId=1975760"
+  },
+  "oopsAllToons_illustriousV10": {
+    "steps": 30,
+    "refiner_steps": 30,
+    "cfg": 4.5,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "modelVersionId": 1445455,
+    "link": "https://civitai.com/models/1281214?modelVersionId=1445455"
+  },
+  "virelluneILLUNAI_v03": {
+    "steps": 25,
+    "refiner_steps": 25,
+    "cfg": 4,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "modelVersionId": 1975514,
+    "link": "https://civitai.com/models/1681427?modelVersionId=1975514"
   }
 }
