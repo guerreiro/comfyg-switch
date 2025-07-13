@@ -937,6 +937,15 @@
     "modelVersionId": 1804174,
     "link": "https://civitai.com/models/1106264?modelVersionId=1804174"
   },
+  "silenceMix_v60": {
+    "steps": 30,
+    "refiner_steps": 30,
+    "cfg": 5,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "modelVersionId": 1804174,
+    "link": "https://civitai.com/models/1106264?modelVersionId=1804174"
+  },
   "edzepelionspell_v10": {
     "steps": 30,
     "refiner_steps": 30,
@@ -1161,5 +1170,23 @@
     "scheduler": "normal",
     "modelVersionId": 1975514,
     "link": "https://civitai.com/models/1681427?modelVersionId=1975514"
+  },
+  "sakuraplatinum_v20250712": {
+    "steps": 25,
+    "refiner_steps": 25,
+    "cfg": 7,
+    "sampler": "dpmpp_2m",
+    "scheduler": "karras",
+    "modelVersionId": 2003183,
+    "link": "https://civitai.com/models/934925?modelVersionId=2003183"
+  },
+  "lumiere_q": {
+    "steps": 30,
+    "refiner_steps": 30,
+    "cfg": 5,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "modelVersionId": 1992006,
+    "link": "https://civitai.com/models/1760158/lumiere"
   }
 }
