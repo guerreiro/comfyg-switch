@@ -1188,5 +1188,59 @@
     "scheduler": "normal",
     "modelVersionId": 1992006,
     "link": "https://civitai.com/models/1760158/lumiere"
+  },
+  "toxicMuse_v20": {
+    "steps": 30,
+    "refiner_steps": 30,
+    "cfg": 7,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "modelVersionId": 2006154,
+    "link": "https://civitai.com/models/1756068?modelVersionId=2006154"
+  },
+  "animagus_v10": {
+    "steps": 28,
+    "refiner_steps": 28,
+    "cfg": 5,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "modelVersionId": 2018001,
+    "link": "https://civitai.com/models/1783095/animagus"
+  },
+  "mayanoMix_v10": {
+    "steps": 35,
+    "refiner_steps": 35,
+    "cfg": 3,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "modelVersionId": 2037204,
+    "link": "https://civitai.com/models/1800138/mayanomix?modelVersionId=2037204"
+  },
+  "tanemomix_v6": {
+    "steps": 28,
+    "refiner_steps": 28,
+    "cfg": 3,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "modelVersionId": 2036473,
+    "link": "https://civitai.com/models/1297977?modelVersionId=2036473"
+  },
+  "macespell_v10": {
+    "steps": 30,
+    "refiner_steps": 30,
+    "cfg": 5,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "modelVersionId": 2030291,
+    "link": "https://civitai.com/models/1794063/macespell"
+  },
+  "alchilialabIll_alchilialabIllV22": {
+    "steps": 30,
+    "refiner_steps": 30,
+    "cfg": 6,
+    "sampler": "dpmpp_2m",
+    "scheduler": "karras",
+    "modelVersionId": 2018954,
+    "link": "https://civitai.com/models/1075675?modelVersionId=2018954"
   }
 }
