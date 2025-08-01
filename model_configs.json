@@ -1242,5 +1242,41 @@
     "scheduler": "karras",
     "modelVersionId": 2018954,
     "link": "https://civitai.com/models/1075675?modelVersionId=2018954"
+  },
+  "napalmdeathspell_v10": {
+    "steps": 25,
+    "refiner_steps": 25,
+    "cfg": 5,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "modelVersionId": 2041535,
+    "link": "https://civitai.com/models/1803976"
+  },
+  "animePopCute_v25": {
+    "steps": 30,
+    "refiner_steps": 30,
+    "cfg": 5,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "modelVersionId": 2062381,
+    "link": "https://civitai.com/models/1540768?modelVersionId=2062381"
+  },
+  "nanomixMultiverse_v20": {
+    "steps": 30,
+    "refiner_steps": 30,
+    "cfg": 3,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "modelVersionId": 2060158,
+    "link": "https://civitai.com/models/932505?modelVersionId=2060158"
+  },
+  "toxicMuse_v302": {
+    "steps": 30,
+    "refiner_steps": 30,
+    "cfg": 7,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "modelVersionId": 2066722,
+    "link": "https://civitai.com/models/1756068?modelVersionId=2066722"
   }
 }
