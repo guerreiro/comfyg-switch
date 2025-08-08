@@ -1,7 +1,9 @@
 # Comfyg Switch
 
-Comfyg Switch is a custom node that dynamically selects model configuration parameters based on the chosen checkpoint. 
-It reads model-specific settings from a JSON file (model_configs.json).
+Comfyg Switch is a custom node that dynamically selects model configuration parameters based on the chosen checkpoint.
+It reads model-specific settings from a JSON file (model_configs.json). You can change the values, but updating the node will lose all changes.
+Alternatively, you can create your own custom file, named "my_model_configs.json," place it in the node's root directory, and then insert your settings into the new file, using the same pattern as the default file. You can even overwrite some settings from the default file by creating an item with the same name as the model and changing any attributes.
+Now, updating the node won't lose your custom settings because this file isn't in Git.
 
 ## Inputs
 
