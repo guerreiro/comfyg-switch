@@ -1278,5 +1278,50 @@
     "scheduler": "normal",
     "modelVersionId": 2066722,
     "link": "https://civitai.com/models/1756068?modelVersionId=2066722"
+  },
+  "cunettaMix_v10VAE": {
+    "steps": 30,
+    "refiner_steps": 30,
+    "cfg": 3,
+    "sampler": "euler",
+    "scheduler": "normal",
+    "modelVersionId": 2068275,
+    "link": "https://civitai.com/models/1827648/cunetta-mix"
+  },
+  "legitnessIllustrious_v10": {
+    "steps": 20,
+    "refiner_steps": 20,
+    "cfg": 4,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "modelVersionId": 2070325,
+    "link": "https://civitai.com/models/1829471/legitness-illustrious"
+  },
+  "adamsApple_v10": {
+    "steps": 30,
+    "refiner_steps": 15,
+    "cfg": 7,
+    "sampler": "euler_ancestral",
+    "scheduler": "karras",
+    "modelVersionId": 2028300,
+    "link": "https://civitai.com/models/1792305"
+  },
+  "oopsAllToons_naiV10Toonitup": {
+    "steps": 30,
+    "refiner_steps": 30,
+    "cfg": 4.5,
+    "sampler": "euler_ancestral",
+    "scheduler": "karras",
+    "modelVersionId": 1990774,
+    "link": "https://civitai.com/models/1281214?modelVersionId=1990774"
+  },
+  "megamixxlv3Animetv_megamixxlV3": {
+    "steps": 28,
+    "refiner_steps": 28,
+    "cfg": 4.5,
+    "sampler": "euler_ancestral",
+    "scheduler": "sgm_uniform",
+    "modelVersionId": 1624823,
+    "link": "https://civitai.com/models/1437398/megamixxlv3-animetv-fusionscreencap?modelVersionId=1624823"
   }
 }
