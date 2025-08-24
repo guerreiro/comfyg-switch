@@ -60,8 +60,6 @@ app.registerExtension({
         orig?.call(node, v);
         fetchAndApply();
       };
-      // Initial populate
-      fetchAndApply();
     }
   }
 });
