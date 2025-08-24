@@ -6,7 +6,6 @@ import re
 from pathlib import Path
 from typing import Any, Dict
 
-
 class AlwaysComparisonReturn(str):
     def __eq__(self, other: object) -> bool:
         return True
@@ -94,15 +93,15 @@ class ComfygSwitch:
 
     @classmethod
     def INPUT_TYPES(cls):
+        checkpoints = sorted(folder_paths.get_filename_list("checkpoints"))
         return {
             "required": {
-                "checkpoint_model": (sorted(folder_paths.get_filename_list("checkpoints")),),
-                "use_custom_input": ("BOOLEAN", {"default": False}),
+                "checkpoint_model": (checkpoints,),
                 "steps": ("INT", {"default": 30, "min": 1, "max": 200}),
                 "refiner_steps": ("INT", {"default": 30, "min": 1, "max": 200}),
                 "cfg": ("FLOAT", {"default": 7.0, "min": 0.1, "max": 20.0, "step": 0.1}),
-                "sampler": (comfy.samplers.KSampler.SAMPLERS,),
-                "scheduler": (comfy.samplers.KSampler.SCHEDULERS,),
+                "sampler": (comfy.samplers.KSampler.SAMPLERS, {"default": comfy.samplers.KSampler.SAMPLERS[0]}),
+                "scheduler": (comfy.samplers.KSampler.SCHEDULERS, {"default": comfy.samplers.KSampler.SCHEDULERS[0]}),
             }
         }
 
@@ -118,38 +117,10 @@ class ComfygSwitch:
     FUNCTION = "select_config"
     CATEGORY = "Configuration"
 
-    def select_config(self, checkpoint_model, use_custom_input, steps, refiner_steps, cfg, sampler, scheduler):
-        configs = self.load_configs()
-        model_choice = self.get_last_path_segment(checkpoint_model)
-        config = configs.get(model_choice, {})
-
-        self._log("Model:", model_choice)
-        self._log("Loaded config:", config)
-
-        final_config = self.merge_defaults(
-            {
-                "steps": steps,
-                "refiner_steps": refiner_steps,
-                "cfg": cfg,
-                "sampler": sampler,
-                "scheduler": scheduler,
-            },
-            config,
-        )
-
-        self._log("Final config:", final_config)
-
-        if use_custom_input:
-            return (checkpoint_model, steps, refiner_steps, cfg, sampler, scheduler)
-        else:
-            return (
-                checkpoint_model,
-                final_config["steps"],
-                final_config["refiner_steps"],
-                final_config["cfg"],
-                final_config["sampler"],
-                final_config["scheduler"],
-            )
+    def select_config(self, checkpoint_model, steps, refiner_steps, cfg, sampler, scheduler):
+        # The inputs are already populated with config values by the frontend.
+        # Just pass them straight through.
+        return (checkpoint_model, steps, refiner_steps, cfg, sampler, scheduler)
 
     @staticmethod
     def merge_defaults(defaults: Dict[str, Any], overrides: Dict[str, Any]) -> Dict[str, Any]:
@@ -161,6 +132,29 @@ class ComfygSwitch:
             return ""
         return Path(path.strip()).stem
 
+
+# NEW: tiny API to fetch a model's final config
+try:
+    from server import PromptServer
+    from aiohttp import web
+except Exception:
+    PromptServer = None
+    web = None
+
+if PromptServer and web:
+    @PromptServer.instance.routes.get("/comfygswitch/config")
+    async def comfygswitch_get_config(request):
+        model = request.rel_url.query.get("model", "") or ""
+        # resolve using your existing helpers
+        configs = ComfygSwitch.load_configs()
+        key = ComfygSwitch.get_last_path_segment(model)
+        data = configs.get(key, {})
+        # only return JSON-serializable fields
+        safe = {
+            k: v for k, v in data.items()
+            if k in {"steps", "refiner_steps", "cfg", "sampler", "scheduler"}
+        }
+        return web.json_response(safe)
 
 NODE_CLASS_MAPPINGS = {
     "ComfygSwitch": ComfygSwitch
