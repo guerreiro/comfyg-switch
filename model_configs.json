@@ -1,4 +1,18 @@
 {
+  "__default__": {
+    "steps": 20,
+    "refiner_steps": 20,
+    "cfg": 7.0,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal"
+  },
+  "unknown_model*": {
+    "steps": 28,
+    "refiner_steps": 28,
+    "cfg": 6.5,
+    "sampler": "euler",
+    "scheduler": "normal"
+  },
   "rouwei_061Vpred": {
     "steps": 25,
     "refiner_steps": 25,
@@ -1440,5 +1454,32 @@
     "scheduler": "normal",
     "modelVersionId": 1912640,
     "link": "https://civitai.com/models/846917?modelVersionId=1912640"
+  },
+  "flanimeIllustriousXL_v20": {
+    "steps": 30,
+    "refiner_steps": 30,
+    "cfg": 5,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "modelVersionId": 2125353,
+    "link": "https://civitai.com/models/1544647?modelVersionId=2125353"
+  },
+  "v10_v10": {
+    "steps": 25,
+    "refiner_steps": 25,
+    "cfg": 6,
+    "sampler": "euler",
+    "scheduler": "normal",
+    "modelVersionId": 2129779,
+    "link": "https://civitai.com/models/1881667/v10?modelVersionId=2129779"
+  },
+  "blindguardianspell_v10": {
+    "steps": 25,
+    "refiner_steps": 25,
+    "cfg": 5,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "modelVersionId": 2123940,
+    "link": "https://civitai.com/models/1876507/blindguardianspell"
   }
 }
