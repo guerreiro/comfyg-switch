@@ -1,6 +1,8 @@
 {
-  "last_node_id": 21,
-  "last_link_id": 25,
+  "id": "8a6dcd48-2ede-4ad4-99d7-67d14b6e80a9",
+  "revision": 0,
+  "last_node_id": 22,
+  "last_link_id": 31,
   "nodes": [
     {
       "id": 9,
@@ -25,7 +27,13 @@
       ],
       "outputs": [],
       "properties": {
-        "Node name for S&R": "SaveImage"
+        "cnr_id": "comfy-core",
+        "ver": "0.3.50",
+        "Node name for S&R": "SaveImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.0.1"
+        }
       },
       "widgets_values": [
         "ComfyUI"
@@ -69,48 +77,59 @@
         {
           "name": "steps",
           "type": "INT",
-          "link": 20,
           "widget": {
             "name": "steps"
-          }
+          },
+          "link": 28
         },
         {
           "name": "cfg",
           "type": "FLOAT",
-          "link": 21,
           "widget": {
             "name": "cfg"
-          }
+          },
+          "link": 29
         },
         {
           "name": "sampler_name",
           "type": "COMBO",
-          "link": 22,
           "widget": {
             "name": "sampler_name"
-          }
+          },
+          "link": 31
         },
         {
           "name": "scheduler",
           "type": "COMBO",
-          "link": 23,
           "widget": {
             "name": "scheduler"
-          }
+          },
+          "link": 30
         }
       ],
       "outputs": [
         {
           "name": "LATENT",
           "type": "LATENT",
+          "slot_index": 0,
           "links": [
             7
-          ],
-          "slot_index": 0
+          ]
         }
       ],
       "properties": {
-        "Node name for S&R": "KSampler"
+        "cnr_id": "comfy-core",
+        "ver": "0.3.50",
+        "Node name for S&R": "KSampler",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "steps": true,
+            "cfg": true,
+            "sampler_name": true,
+            "scheduler": true
+          },
+          "version": "7.0.1"
+        }
       },
       "widgets_values": [
         583821482255772,
@@ -130,7 +149,7 @@
         184.53378295898438
       ],
       "size": [
-        210,
+        210.29940795898438,
         129.9862518310547
       ],
       "flags": {},
@@ -147,14 +166,20 @@
         {
           "name": "CONDITIONING",
           "type": "CONDITIONING",
+          "slot_index": 0,
           "links": [
             6
-          ],
-          "slot_index": 0
+          ]
         }
       ],
       "properties": {
-        "Node name for S&R": "CLIPTextEncode"
+        "cnr_id": "comfy-core",
+        "ver": "0.3.50",
+        "Node name for S&R": "CLIPTextEncode",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.0.1"
+        }
       },
       "widgets_values": [
         "watermark, text\n"
@@ -192,91 +217,22 @@
         {
           "name": "IMAGE",
           "type": "IMAGE",
+          "slot_index": 0,
           "links": [
             9
-          ],
-          "slot_index": 0
+          ]
         }
       ],
       "properties": {
-        "Node name for S&R": "VAEDecode"
+        "cnr_id": "comfy-core",
+        "ver": "0.3.50",
+        "Node name for S&R": "VAEDecode",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.0.1"
+        }
       },
       "widgets_values": []
-    },
-    {
-      "id": 17,
-      "type": "ComfygSwitch",
-      "pos": [
-        -217.7621612548828,
-        466.4757385253906
-      ],
-      "size": [
-        411.47564697265625,
-        302
-      ],
-      "flags": {},
-      "order": 0,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "MODEL_NAME",
-          "type": "",
-          "links": [
-            19
-          ],
-          "slot_index": 0
-        },
-        {
-          "name": "STEPS",
-          "type": "INT",
-          "links": [
-            20
-          ],
-          "slot_index": 1
-        },
-        {
-          "name": "REFINE_STEPS",
-          "type": "INT",
-          "links": []
-        },
-        {
-          "name": "CFG",
-          "type": "FLOAT",
-          "links": [
-            21
-          ],
-          "slot_index": 3
-        },
-        {
-          "name": "SAMPLER",
-          "type": "COMBO",
-          "links": [
-            22
-          ],
-          "slot_index": 4
-        },
-        {
-          "name": "SCHEDULER",
-          "type": "COMBO",
-          "links": [
-            23
-          ],
-          "slot_index": 5
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "ComfygSwitch"
-      },
-      "widgets_values": [
-        "Illustrious/illustriousPencilXL_v200.safetensors",
-        false,
-        30,
-        30,
-        7,
-        "euler",
-        "normal"
-      ]
     },
     {
       "id": 6,
@@ -303,14 +259,20 @@
         {
           "name": "CONDITIONING",
           "type": "CONDITIONING",
+          "slot_index": 0,
           "links": [
             4
-          ],
-          "slot_index": 0
+          ]
         }
       ],
       "properties": {
-        "Node name for S&R": "CLIPTextEncode"
+        "cnr_id": "comfy-core",
+        "ver": "0.3.50",
+        "Node name for S&R": "CLIPTextEncode",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.0.1"
+        }
       },
       "widgets_values": [
         "1boy, Goku, DBZ"
@@ -319,18 +281,84 @@
       "bgcolor": "#353"
     },
     {
+      "id": 14,
+      "type": "CheckpointLoaderSimple",
+      "pos": [
+        242.60675048828125,
+        390.90185546875
+      ],
+      "size": [
+        210,
+        98
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "ckpt_name",
+          "type": "COMBO",
+          "widget": {
+            "name": "ckpt_name"
+          },
+          "link": 26
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "slot_index": 0,
+          "links": [
+            13
+          ]
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "slot_index": 1,
+          "links": [
+            14,
+            15
+          ]
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "slot_index": 2,
+          "links": [
+            17
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.50",
+        "Node name for S&R": "CheckpointLoaderSimple",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "ckpt_name": true
+          },
+          "version": "7.0.1"
+        }
+      },
+      "widgets_values": [
+        "v1-5-pruned-emaonly.ckpt"
+      ]
+    },
+    {
       "id": 16,
       "type": "EmptyLatentImage",
       "pos": [
-        493.6903076171875,
-        669.6082763671875
+        490.053955078125,
+        714.1536865234375
       ],
       "size": [
         210,
         108.06611633300781
       ],
       "flags": {},
-      "order": 1,
+      "order": 0,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -343,7 +371,13 @@
         }
       ],
       "properties": {
-        "Node name for S&R": "EmptyLatentImage"
+        "cnr_id": "comfy-core",
+        "ver": "0.3.50",
+        "Node name for S&R": "EmptyLatentImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.0.1"
+        }
       },
       "widgets_values": [
         1024,
@@ -352,64 +386,81 @@
       ]
     },
     {
-      "id": 14,
-      "type": "CheckpointLoaderSimple",
+      "id": 22,
+      "type": "ComfygSwitch",
       "pos": [
-        242.60675048828125,
-        390.90185546875
+        -275.2002258300781,
+        479.53363037109375
       ],
       "size": [
-        210,
-        74
+        411.47564697265625,
+        346
       ],
       "flags": {},
-      "order": 2,
+      "order": 1,
       "mode": 0,
-      "inputs": [
-        {
-          "name": "ckpt_name",
-          "type": "COMBO",
-          "link": 19,
-          "widget": {
-            "name": "ckpt_name"
-          }
-        }
-      ],
+      "inputs": [],
       "outputs": [
         {
-          "name": "MODEL",
-          "type": "MODEL",
+          "name": "MODEL_NAME",
+          "type": "",
           "links": [
-            13
-          ],
-          "slot_index": 0,
-          "shape": 3
+            26
+          ]
         },
         {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            14,
-            15
-          ],
-          "slot_index": 1,
-          "shape": 3
+          "name": "CONFIG_SOURCE",
+          "type": "STRING",
+          "links": null
         },
         {
-          "name": "VAE",
-          "type": "VAE",
+          "name": "STEPS",
+          "type": "INT",
           "links": [
-            17
-          ],
-          "slot_index": 2,
-          "shape": 3
+            28
+          ]
+        },
+        {
+          "name": "REFINE_STEPS",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "name": "CFG",
+          "type": "FLOAT",
+          "links": [
+            29
+          ]
+        },
+        {
+          "name": "SAMPLER",
+          "type": "COMBO",
+          "links": [
+            31
+          ]
+        },
+        {
+          "name": "SCHEDULER",
+          "type": "COMBO",
+          "links": [
+            30
+          ]
         }
       ],
       "properties": {
-        "Node name for S&R": "CheckpointLoaderSimple"
+        "aux_id": "guerreiro/comfyg-switch",
+        "ver": "409e94be9f642a1fd1a44450a9bb9e58c48ec9aa",
+        "Node name for S&R": "ComfygSwitch"
       },
       "widgets_values": [
-        "v1-5-pruned-emaonly.ckpt"
+        "juggernautXL_juggXIByRundiffusion.safetensors",
+        "juggernautXL_juggXIByRundiffusion",
+        30,
+        30,
+        4.5,
+        "dpmpp_2m_sde",
+        "normal",
+        null
       ]
     }
   ],
@@ -487,43 +538,43 @@
       "LATENT"
     ],
     [
-      19,
-      17,
+      26,
+      22,
       0,
       14,
       0,
       "COMBO"
     ],
     [
-      20,
-      17,
-      1,
+      28,
+      22,
+      2,
       3,
       4,
       "INT"
     ],
     [
-      21,
-      17,
-      3,
+      29,
+      22,
+      4,
       3,
       5,
       "FLOAT"
     ],
     [
+      30,
       22,
-      17,
-      4,
-      3,
       6,
+      3,
+      7,
       "COMBO"
     ],
     [
-      23,
-      17,
+      31,
+      22,
       5,
       3,
-      7,
+      6,
       "COMBO"
     ]
   ],
@@ -531,10 +582,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.9090909090909091,
+      "scale": 1,
       "offset": [
-        351.26165159065863,
-        173.69632374354822
+        334.48855345434663,
+        -114.72941449709438
       ]
     },
     "node_versions": {
@@ -545,7 +596,8 @@
     "VHS_latentpreview": false,
     "VHS_latentpreviewrate": 0,
     "VHS_MetadataImage": true,
-    "VHS_KeepIntermediate": true
+    "VHS_KeepIntermediate": true,
+    "frontendVersion": "1.25.8"
   },
   "version": 0.4
 }
