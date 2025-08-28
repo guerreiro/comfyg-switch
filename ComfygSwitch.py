@@ -148,29 +148,14 @@ class ComfygSwitch:
     CATEGORY = "Configuration"
 
     def select_config(self, checkpoint_model, config_source, steps, refiner_steps, cfg, sampler, scheduler):
-        config, config_name, model_choice = self.get_config_for_model(checkpoint_model)
-
-        self._log(f"Model choice={model_choice}, using config={config_name}")
-
-        final_config = self.merge_defaults(
-            {
-                "steps": steps,
-                "refiner_steps": refiner_steps,
-                "cfg": cfg,
-                "sampler": sampler,
-                "scheduler": scheduler,
-            },
-            config,
-        )
-
         return (
             checkpoint_model,
             config_source,
-            final_config["steps"],
-            final_config["refiner_steps"],
-            final_config["cfg"],
-            final_config["sampler"],
-            final_config["scheduler"],
+            steps,
+            refiner_steps,
+            cfg,
+            sampler,
+            scheduler,
         )
 
     @staticmethod
@@ -184,7 +169,6 @@ class ComfygSwitch:
         return Path(path.strip()).stem
 
 
-# NEW: tiny API to fetch a model's final config
 try:
     from server import PromptServer
     from aiohttp import web
